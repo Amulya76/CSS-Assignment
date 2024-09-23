@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Breakfast Ideas</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      color: #2ecc71;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Flexbox Container */
+    .flex-container {
+      display: flex;
+      justify-content: space-around; /* Distributes space between items */
+      align-items: center; /* Centers items vertically */
+      flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+      margin: 20px 0;
+    }
+
+    /* Flexbox Item */
+    .flex-item {
+      background-color: #fff;
+      border: 2px solid #2ecc71;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      margin: 10px;
+      width: 150px; /* Fixed width for demonstration */
+      transition: transform 0.2s;
+    }
+
+    /* Hover Effect */
+    .flex-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .flex-item {
+        width: 100%; /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Healthy Breakfast Ideas</h1>
+    <p>Start your day with nutritious and delicious breakfast options!</p>
+  </header>
+
+  <section>
+    <div class="flex-container">
+      <div class="flex-item">
+        <h3>Oatmeal</h3>
+        <p>Rich in fiber and keeps you full for longer.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Smoothie Bowl</h3>
+        <p>Blended fruits topped with nuts and seeds.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Avocado Toast</h3>
+        <p>Healthy fats and fiber on whole grain bread.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Greek Yogurt</h3>
+        <p>Protein-packed with fruits and honey.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Healthy Breakfast Ideas | Designed by Amulya Pallikonda</p>
+  </footer>
+
+</body>
+</html>
