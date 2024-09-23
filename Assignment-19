@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #4b0082;
+    color: white;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+    color: #dcdcdc;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0.7)), url('hero-background.jpg');
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.custom-btn {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 0;
+}
+
+.project-card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #4b0082;
+    color: white;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    color: #ff6347;
+}
+
+.contact-section .custom-btn {
+    color: #ff6347;
+    border-color: #ff6347;
+}
+
+.custom-btn:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Footer */
+.footer-custom {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-custom p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#">Amulya's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm Amulya!</h1>
+            <p class="lead">A passionate web developer focused on building clean, minimalistic websites.</p>
+            <a href="#projects" class="btn btn-primary custom-btn">See My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/weather.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A weather forecast app built using ReactJS and APIs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/pro.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A portfolio website created with Bootstrap and custom CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/e.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">An e-commerce website developed using HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Get in touch via email or follow me on social media.</p>
+            <a href="mailto:amulya@example.com" class="btn btn-outline-primary custom-btn">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            <p>&copy; 2024 Amulya Pallikonda</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
