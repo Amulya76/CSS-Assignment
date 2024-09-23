@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Launch</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Container styling */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Title with Pseudo-elements */
+        h1 {
+            position: relative;
+            font-size: 2.5rem;
+            color: #444;
+        }
+
+        h1::before, h1::after {
+            content: '✨';
+            position: absolute;
+            font-size: 1.5rem;
+        }
+
+        h1::before {
+            top: -20px;
+            left: -20px;
+        }
+
+        h1::after {
+            bottom: -20px;
+            right: -20px;
+        }
+
+        /* Navigation links */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #444;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Link hover effect */
+        nav ul li a:hover {
+            border-color: #ff6347;
+            background-color: #ffe5e0;
+        }
+
+        /* Button with hover and active states */
+        .action-btn {
+            margin: 30px 0;
+            background-color: #008cba;
+            color: #fff;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            position: relative;
+        }
+
+        .action-btn::before {
+            content: '🚀';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background-color: #005f73;
+        }
+
+        .action-btn:hover::before {
+            opacity: 1;
+        }
+
+        .action-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Cards with nth-child styling */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '💡';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2rem;
+        }
+
+        .card:nth-child(odd) {
+            background-color: #c4e17f;
+        }
+
+        .card:nth-child(even) {
+            background-color: #76c7c0;
+        }
+
+        .card:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        /* Form elements with focus effect */
+        .form-container {
+            margin-top: 40px;
+        }
+
+        .form-container input[type="text"], .form-container input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-container input[type="text"]:focus, .form-container input[type="email"]:focus {
+            border-color: #008cba;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #ff4500;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title with Pseudo-elements -->
+        <h1>Rocket Launch </h1>
+
+        <!-- Navigation with Hover Effect -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Interactive Button -->
+        <button class="action-btn">Launch Rocket!</button>
+
+        <!-- Cards with nth-child -->
+        <div class="card-container">
+            <div class="card">First Card</div>
+            <div class="card">Second Card</div>
+            <div class="card">Third Card</div>
+        </div>
+
+        <!-- Form with Focus Effect -->
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
