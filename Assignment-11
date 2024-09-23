@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Positioning </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header {
+      background-color: #28a745;
+      color: #fff;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    main {
+      margin-top: 80px; /* Space for fixed header */
+    }
+
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .fruit {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .fruit:hover {
+      transform: scale(1.05);
+    }
+
+    .relative-fruit {
+      position: relative;
+      background-color: #e2f7e2;
+    }
+
+    .absolute-fruit {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background-color: #fff3cd;
+    }
+
+    .sticky-fruit {
+      position: sticky;
+      top: 20px;
+      background-color: #cce5ff;
+    }
+
+    .fixed-fruit {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #f8d7da;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      width: 100px; /* Set a fixed size for the images */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Fruit Positioning 
+  </header>
+
+  <main class="container">
+    <section class="fruit relative-fruit">
+      <h2>Apple</h2>
+      <img src="https://via.placeholder.com/100/FF0000/FFFFFF?text=Apple" alt="Apple">
+      <p>This apple is relatively positioned, maintaining its flow in the layout.</p>
+    </section>
+
+    <section class="fruit absolute-fruit">
+      <h2>Banana</h2>
+      <img src="https://via.placeholder.com/100/FFFF00/000000?text=Banana" alt="Banana">
+      <p>This banana is absolutely positioned, floating above the apple.</p>
+    </section>
+
+    <section class="fruit sticky-fruit">
+      <h2>Grapes</h2>
+      <img src="https://via.placeholder.com/100/800080/FFFFFF?text=Grapes" alt="Grapes">
+      <p>This sticky grapes box sticks to the top while scrolling.</p>
+    </section>
+
+    <div class="fixed-fruit">
+      <h3>Fixed Orange</h3>
+      <img src="https://via.placeholder.com/100/FFA500/FFFFFF?text=Orange" alt="Orange">
+      <p>This orange stays fixed at the bottom left of the screen.</p>
+    </div>
+  </main>
+</body>
+</html>
