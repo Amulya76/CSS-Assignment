@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+      /* Base styles */
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          color: #333;
+          text-align: center;
+      }
+
+      h1, h2 {
+          margin: 20px 0;
+      }
+
+      /* Image gallery styling */
+      .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 15px;
+          padding: 20px;
+      }
+
+      .gallery img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .gallery img:hover {
+          transform: scale(1.05);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer styling */
+      footer {
+          background-color: #3498db;
+          color: white;
+          padding: 15px 0;
+          margin-top: 20px;
+      }
+      
+      /* Media Queries for small screens */
+      @media (max-width: 600px) {
+          h1 {
+              font-size: 1.8em;
+          }
+          h2 {
+              font-size: 1.4em;
+          }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Image Gallery</h1>
+    </header>
+    
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <img 
+            src="/images/land.jpg"
+            srcset="/images/land.jpg 600w, /images/land.jpg 1024w, /images/land.jpg 1600w"
+            alt="Beautiful Landscape"
+        >
+        <img 
+            src="/images/city.jpg"
+            srcset="/images/city.jpg 600w, /images/city.jpg 1024w,/images/city.jpg 1600w"
+            alt="City Skyline"
+        >
+        <img 
+            src="/images/mountain.jpg"
+            srcset="/images/mountain.jpg 600w, /images/mountain.jpg 1024w, /images/mountain.jpg 1600w"
+            alt="Mountain View"
+        >
+    </section>
+
+    <footer>
+        &copy; 2024 Responsive Images
+    </footer>
+</body>
+</html>
