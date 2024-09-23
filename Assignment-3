@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits and Their Benefits</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      padding: 40px;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      color: #e67e22;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added text shadow for h1 */
+      letter-spacing: 2px; /* Spacing between letters */
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Verdana', sans-serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #2ecc71;
+      text-transform: uppercase; /* Make h2 uppercase */
+    }
+
+    /* Fruit Name and Description */
+    .fruit-name {
+      font-family: 'Courier New', monospace;
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+      transition: color 0.3s ease-in-out; /* Smooth color change */
+    }
+
+    /* Hover Effect on Fruit Names */
+    .fruit-name:hover {
+      color: #3498db;
+    }
+
+    .fruit-description {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: #34495e;
+    }
+
+    /* Font Size Variations */
+    .small-text {
+      font-size: 14px;
+    }
+
+    .medium-text {
+      font-size: 20px;
+      text-decoration: underline; /* Underlined medium text */
+    }
+
+    .large-text {
+      font-size: 26px;
+      font-style: italic; /* Italic for large text */
+    }
+
+    /* Font Weight and Style */
+    .normal-weight {
+      font-weight: 400;
+    }
+
+    .bold-weight {
+      font-weight: 700;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    /* Additional Unique Styling: Small Caps and Letter Spacing */
+    .small-caps {
+      font-variant: small-caps;
+      letter-spacing: 1px;
+    }
+
+    /* Line Height and Text Transform */
+    .line-height-example {
+      line-height: 2.0;
+    }
+
+    .uppercase-text {
+      text-transform: uppercase;
+    }
+
+    .capitalize-text {
+      text-transform: capitalize;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 50px;
+      color: #95a5a6;
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fruits and Their Benefits</h1>
+    <p>Discover the nutritional power of nature's sweetest gifts</p>
+  </header>
+
+  <section>
+    <h2>Popular Fruits</h2>
+    <p class="fruit-name">Apple</p>
+    <p class="fruit-description">Apples are a rich source of fiber and vitamin C, helping with digestion and boosting your immune system.</p>
+
+    <p class="fruit-name">Banana</p>
+    <p class="fruit-description">Bananas provide a quick energy boost and are packed with potassium, great for heart health and muscle function.</p>
+
+    <p class="fruit-name">Orange</p>
+    <p class="fruit-description">Oranges are well known for their high vitamin C content, supporting immune function and glowing skin.</p>
+  </section>
+
+  <section>
+    <h2>Health Benefits of Fruits</h2>
+    <p class="small-text">Eating fruits regularly can reduce the risk of heart disease and stroke.</p>
+    <p class="medium-text">Fruits are a great source of essential vitamins and minerals.</p>
+    <p class="large-text">Fruits contain antioxidants that help fight free radicals and prevent aging.</p>
+  </section>
+
+  <section>
+    <h2>Fruit Types & Nutritional Value</h2>
+    <p class="normal-weight">Citrus fruits like lemons, oranges, and grapefruits are rich in vitamin C and have detoxifying properties.</p>
+    <p class="bold-weight">Berries such as strawberries, blueberries, and raspberries are packed with antioxidants and are great for brain health.</p>
+    <p class="italic-text">Tropical fruits like mangoes, pineapples, and papayas provide a refreshing burst of flavor and are excellent for digestion.</p>
+  </section>
+
+  <section>
+    <h2>Eat a Rainbow</h2>
+    <p class="line-height-example">Each color of fruit provides different health benefits. Red fruits like apples and strawberries are good for heart health, while green fruits like kiwis and avocados improve digestion.</p>
+    <p class="uppercase-text">FRUITS PROVIDE NATURAL ENERGY AND NOURISHMENT.</p>
+    <p class="capitalize-text small-caps">eat a variety of fruits every day for a balanced diet.</p>
+  </section>
+
+  <footer>
+    <p>© 2024 Fruits and Their Benefits | Designed by Amulya Pallikonda</p>
+  </footer>
+
+</body>
+</html>
