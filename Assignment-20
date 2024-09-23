@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f3;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Grid System */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: #ffffff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* Headings */
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0;
+      color: #2c3e50;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 12px 25px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #d35400;
+      transform: translateY(-2px);
+    }
+
+    /* Cards */
+    .card {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      text-align: left;
+      transition: box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Forms */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+
+    .form-input:focus {
+      border-color: #e67e22;
+      outline: none;
+    }
+
+    /* Utility Classes */
+    .m-10 { margin: 10px; }
+    .p-10 { padding: 10px; }
+
+    .text-center { text-align: center; }
+    .font-bold { font-weight: bold; }
+  </style>
+  <title>University Course Registration</title>
+</head>
+<body>
+
+  <!-- Course Listing -->
+  <section>
+    <h1 class="text-center">University Course Catalog</h1>
+
+    <h2 class="text-center">Available Courses</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Web Development</h3>
+        <p>Learn the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+        <button class="btn">Enroll Now</button>
+      </div>
+      <div class="grid-item">
+        <h3>Data Science</h3>
+        <p>Discover data analysis, machine learning, and statistical methods.</p>
+        <button class="btn">Enroll Now</button>
+      </div>
+      <div class="grid-item">
+        <h3>Graphic Design</h3>
+        <p>Enhance your design skills with courses in Adobe Suite and design principles.</p>
+        <button class="btn">Enroll Now</button>
+      </div>
+      <div class="grid-item">
+        <h3>Digital Marketing</h3>
+        <p>Understand the strategies of online marketing and social media engagement.</p>
+        <button class="btn">Enroll Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="p-10">
+    <h2>Course Registration Form</h2>
+    <div class="form-group">
+      <label class="form-label" for="name">Your Name</label>
+      <input class="form-input" type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="email">Your Email</label>
+      <input class="form-input" type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="course">Select Course</label>
+      <select class="form-input" id="course">
+        <option value="">Choose a course</option>
+        <option value="web-development">Web Development</option>
+        <option value="data-science">Data Science</option>
+        <option value="graphic-design">Graphic Design</option>
+        <option value="digital-marketing">Digital Marketing</option>
+      </select>
+    </div>
+
+    <button class="btn">Register</button>
+  </section>
+
+</body>
+</html>
