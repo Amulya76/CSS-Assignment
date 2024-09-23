@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .box1 {
+            background: linear-gradient(135deg, #ff6b6b, #ff6b6b 50%, #ff3b3b 50%);
+            left: 50px;
+            top: 50px;
+            z-index: 1; /* Lower stacking order */
+        }
+
+        .box2 {
+            background: linear-gradient(135deg, #4caf50, #4caf50 50%, #388e3c 50%);
+            left: 80px;
+            top: 80px;
+            z-index: 3; /* Higher stacking order */
+        }
+
+        .box3 {
+            background: linear-gradient(135deg, #2196F3, #2196F3 50%, #1976D2 50%);
+            left: 110px;
+            top: 110px;
+            z-index: 2; /* Middle stacking order */
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">Fire</div>
+    <div class="box box2">Earth</div>
+    <div class="box box3">Water</div>
+</body>
+</html>
