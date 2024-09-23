@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Launch </title>
+    <style>
+      /* Basic Styling */
+      body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #001f3f;
+          color: #fff;
+      }
+
+      .container {
+          text-align: center;
+          margin-top: 50px;
+      }
+
+      /* Header Styling with Pseudo-elements */
+      .header-section {
+          text-align: center;
+          margin-top: 20px;
+          position: relative;
+      }
+
+      .header-section h1 {
+          font-size: 3rem;
+          color: #ffdd57;
+          position: relative;
+          text-transform: uppercase;
+      }
+
+      .header-section h1::before {
+          content: "🚀";
+          position: absolute;
+          top: -30px;
+          left: -40px;
+          font-size: 2rem;
+          animation: rotate 4s linear infinite;
+      }
+
+      .header-section h1::after {
+          content: "🌌";
+          position: absolute;
+          bottom: -30px;
+          right: -40px;
+          font-size: 2rem;
+      }
+
+      @keyframes rotate {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+
+      /* Interactive Rocket Button */
+      .interactive-btn {
+          background-color: #ff6347;
+          border: none;
+          color: white;
+          padding: 15px 30px;
+          font-size: 1.2rem;
+          cursor: pointer;
+          position: relative;
+          transition: background-color 0.3s ease;
+          overflow: hidden;
+      }
+
+      .interactive-btn::before {
+          content: "🚀";
+          position: absolute;
+          left: 50%;
+          top: 0;
+          font-size: 2rem;
+          opacity: 0;
+          transition: all 0.3s ease;
+          transform: translateY(100px);
+      }
+
+      .interactive-btn:hover {
+          background-color: #ff4500;
+      }
+
+      .interactive-btn:hover::before {
+          opacity: 1;
+          transform: translateY(-150px);
+      }
+
+      .interactive-btn:active {
+          background-color: #e63946;
+          transform: scale(0.98);
+      }
+
+      /* Cards: Rockets on Different Terminals */
+      .card-section {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 50px;
+      }
+
+      .card {
+          background-color: #0074D9;
+          color: white;
+          padding: 20px;
+          width: 150px;
+          text-align: center;
+          border-radius: 10px;
+          position: relative;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          overflow: hidden;
+      }
+
+      .card::before {
+          content: "🚀";
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          font-size: 2rem;
+          transform: translateX(-50%);
+          transition: transform 0.3s ease;
+          opacity: 0;
+      }
+
+      .card:nth-child(odd) {
+          background-color: #FF851B;
+      }
+
+      .card:hover {
+          transform: scale(1.1);
+          background-color: #001f3f;
+      }
+
+      .card:hover::before {
+          opacity: 1;
+          transform: translate(-50%, -200%);
+      }
+
+      /* Form styling */
+      .form-section {
+          text-align: center;
+          margin-top: 50px;
+      }
+
+      .form-section h2 {
+          font-size: 2rem;
+          color: #ffdd57;
+      }
+
+      .form-input {
+          display: block;
+          width: 300px;
+          margin: 10px auto;
+          padding: 10px;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          transition: border-color 0.3s ease;
+      }
+
+      .form-input:focus {
+          border-color: #ff6347;
+          outline: none;
+      }
+
+      .submit-btn {
+          background-color: #4b0082;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      .submit-btn:hover {
+          background-color: #6a0dad;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header with Pseudo-elements -->
+    <header class="header-section">
+        <h1>Launch Your Rocket!</h1>
+    </header>
+
+    <!-- Interactive Rocket Button -->
+    <div class="container">
+        <button class="interactive-btn">Hover to Launch!</button>
+    </div>
+
+    <!-- Rocket Terminals with Cards -->
+    <section class="card-section">
+        <div class="card">Terminal 1</div>
+        <div class="card">Terminal 2</div>
+        <div class="card">Terminal 3</div>
+        <div class="card">Terminal 4</div>
+    </section>
+
+    <!-- Form demonstrating focus pseudo-class -->
+    <section class="form-section">
+        <h2>Get In Touch for the Next Launch</h2>
+        <form>
+            <input type="text" placeholder="Enter your name" class="form-input">
+            <input type="email" placeholder="Enter your email" class="form-input">
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
