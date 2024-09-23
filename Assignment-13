@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+      * {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 0 auto;
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #e74c3c;
+}
+
+.description {
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+.transition-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.transition-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the CSS Transitions</h1>
+        <div class="box"></div>
+        <p class="description">Hover over the box to see the transitions in action!</p>
+        <button class="transition-btn">Click Me!</button>
+    </div>
+</body>
+</html>
