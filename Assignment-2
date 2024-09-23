@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors and Backgrounds</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #004aad;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #004aad;
+            text-transform: uppercase;
+        }
+
+        /* Text color and background color example */
+        .color-example {
+            color: white;
+            background-color: #ff6347; /* Tomato */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-example:hover {
+            background-color: #ff4500; /* Darker Tomato on hover */
+        }
+
+        /* Background image example */
+        .background-image-example {
+    background-image: url('/images/images.jpg'); /* Fixed the syntax error */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+        .background-image-example:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Background repeat example */
+        .background-repeat-example {
+            background-image: url('/images/download.jpg');
+            background-repeat: repeat;
+            background-position: left top;
+            background-size: auto;
+            padding: 60px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gradient background example */
+        .gradient-background {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            padding: 50px;
+            color: white;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .gradient-background:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Color and Background Demonstration</h1>
+    </header>
+
+    <section>
+        <h2>Text Color and Background Color</h2>
+        <p class="color-example">This paragraph has a specific text color and background color.</p>
+    </section>
+
+    <section>
+        <h2>Background Image</h2>
+        <div class="background-image-example">
+            This div has a background image with different background properties applied.
+        </div>
+    </section>
+
+    <section>
+        <h2>Background Repeat</h2>
+        <div class="background-repeat-example">
+            <b>This div has a repeated background image.</b>
+        </div>
+    </section>
+
+    <section>
+        <h2>Gradient Background</h2>
+        <div class="gradient-background">
+            This div has a linear gradient background.
+        </div>
+    </section>
+</body>
+</html>
