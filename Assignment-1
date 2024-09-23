@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Properties Assignment</title>
+    <style>
+        /* Element Selector - applies to all paragraphs */
+        p {
+            font-size: 16px;
+            color: darkblue;
+        }
+
+        /* ID Selector - applies to the element with ID "main-title" */
+        #main-title {
+            color: black;
+            text-decoration: underline;
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        /* Class Selector - applies to sub-headings */
+        .sub-heading {
+            color: green;
+        }
+
+        /* Class Selector for a group of items */
+        .items-list .item {
+            color: orange;
+            list-style-type: square;
+        }
+
+        /* Pseudo-class: First child styling */
+        .items-list .item:first-child {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Attribute Selector - applies to buttons with type="submit" */
+        button[type="submit"] {
+            background-color: #3498db;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Pseudo-class: Hover effect for buttons */
+        button:hover {
+            background-color: aquamarine;
+        }
+
+        /* Pseudo-class: Visited link styling */
+        a:visited {
+            color: blueviolet;
+        }
+
+        /* Pseudo-element: Before content for paragraphs */
+        p::before {
+            content: "👉 ";
+            font-size: 20px;
+        }
+
+        /* Class selector and pseudo-class for hoverable div */
+        .hover-div {
+            margin-top: 20px;
+            color: green;
+            cursor: pointer;
+        }
+
+        /* Pseudo-class: Hover effect for the div */
+        .hover-div:hover {
+            color: blue;
+        }
+
+        /* Pseudo-element: Before content for the hoverable div */
+        .hover-div::before {
+            content: "🧡 ";
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ID Selector example -->
+    <h1 id="main-title">Welcome to My Webpage</h1>
+    
+    <!-- Class Selector example -->
+    <h2 class="sub-heading">Different CSS Selectors</h2>
+
+    <!-- Element Selector example -->
+    <p><strong>This is a paragraph styled using an <em>element selector</em>.</strong></p>
+    <p>This paragraph contains different types of elements.</p>
+
+    <!-- Attribute Selector example -->
+    <a href="https://example.com" target="_blank">Visit Example Link</a>
+    <br>
+
+    <!-- Pseudo-class and pseudo-element example -->
+    <p>This is a longer paragraph that shows the use of pseudo-elements. The first line will be bold and red, and if you hover over the link above, its color will change.</p>
+
+    <!-- Class Selector for a group of items -->
+    <ul class="items-list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+
+    <!-- Attribute Selector and Pseudo-class example -->
+    <button type="submit" class="submit">Submit</button>
+
+    <!-- Pseudo-element and Pseudo-class example -->
+    <div class="hover-div">Hover over this box to see the effect</div>
+</body>
+</html>
