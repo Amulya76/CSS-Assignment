@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+      /* Base styles for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.header {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2ecc71;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content-box {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/* --- Media Queries for Different Screen Sizes --- */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .content-box {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .header {
+        font-size: 1.8em;
+    }
+}
+
+/* Tablet (600px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        font-size: 1.2em;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .content-box {
+        font-size: 1.4em;
+    }
+    
+    .header {
+        font-size: 2em;
+    }
+
+    .footer {
+        font-size: 1.1em;
+    }
+}
+
+/* Desktop (above 1024px) */
+@media (min-width: 1025px) {
+    .navbar a {
+        font-size: 1.5em;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+
+    .content-box {
+        font-size: 1.6em;
+    }
+
+    .header {
+        font-size: 2.5em;
+    }
+    
+    .footer {
+        font-size: 1.3em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">Responsive Design</header>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="main-content">
+        <article class="content-box">Article 1</article>
+        <article class="content-box">Article 2</article>
+        <article class="content-box">Article 3</article>
+    </section>
+    <footer class="footer">Footer</footer>
+</body>
+</html>
