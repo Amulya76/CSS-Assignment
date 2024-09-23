@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Routine</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #eef2f3;
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      color: #3498db;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Main Flex Container */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Nested Flex Container for Categories */
+    .category-container {
+      display: flex;
+      flex-wrap: wrap; /* Allows wrapping of items */
+      justify-content: center; /* Center items horizontally */
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    /* Individual Category Box */
+    .category-box {
+      background-color: #fff;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+
+    /* Hover Effect */
+    .category-box:hover {
+      transform: scale(1.05);
+    }
+
+    /* Nested Exercises Flex Container */
+    .exercise-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Distributes space between exercises */
+      align-content: center; /* Aligns content vertically in the container */
+      width: 100%;
+    }
+
+    /* Individual Exercise Box */
+    .exercise-box {
+      background-color: #e74c3c;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px;
+      width: 80px;
+      order: 1; /* Default order for all items */
+      transition: background-color 0.2s;
+    }
+
+    /* Specific Exercise Order */
+    .exercise-box:nth-child(1) { order: 2; } /* Adjusts the order */
+    .exercise-box:nth-child(2) { order: 1; }
+    .exercise-box:nth-child(3) { order: 3; }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .category-box, .exercise-box {
+        width: 90%; /* Full width on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fitness Routine</h1>
+    <p>Your guide to a healthy lifestyle!</p>
+  </header>
+
+  <div class="main-container">
+    <section class="category-container">
+      <div class="category-box">
+        <h3>Cardio</h3>
+        <div class="exercise-container">
+          <div class="exercise-box">Running</div>
+          <div class="exercise-box">Cycling</div>
+          <div class="exercise-box">Jump Rope</div>
+        </div>
+      </div>
+      <div class="category-box">
+        <h3>Strength</h3>
+        <div class="exercise-container">
+          <div class="exercise-box">Squats</div>
+          <div class="exercise-box">Deadlifts</div>
+          <div class="exercise-box">Bench Press</div>
+        </div>
+      </div>
+      <div class="category-box">
+        <h3>Flexibility</h3>
+        <div class="exercise-container">
+          <div class="exercise-box">Yoga</div>
+          <div class="exercise-box">Stretching</div>
+          <div class="exercise-box">Pilates</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2024 Fitness Routine | Designed by Amulya Pallikonda</p>
+  </footer>
+
+</body>
+</html>
